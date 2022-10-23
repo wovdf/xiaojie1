@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小洁可爱又呆的呆呆网页</title>
+    <script src="animate.js"></script>
+    <!-- <script src="小洁.js"></script> -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .con-hd {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(221, 69, 69);
+        }
+
+        .hd-h {
+            float: left;
+            width: 45%;
+            height: 50px;
+        }
+
+        .hd-h p {
+            float: left;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 18px;
+            color: white;
+            padding-left: 2px;
+            text-indent: 1px;
+        }
+
+        .hd-h a {
+            float: left;
+            display: block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            border: 1px solid #ccc;
+            border-radius: 100%;
+            background-color: rgb(247, 192, 192);
+            opacity: .5;
+            margin: 13.5px 4px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        .hd-h input {
+            float: left;
+            outline: none;
+            width: 160px;
+            height: 20px;
+            font-size: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 15px 10px;
+            padding-left: 2px;
+            margin-left: 30px;
+            opacity: .3;
+        }
+
+        .hd-h button {
+            float: left;
+            width: 30px;
+            height: 20px;
+            font-size: 12px;
+            border: none;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 16px;
+            margin-left: 5px;
+            background-color: rgb(241, 98, 98);
+        }
+
+        .hd-e {
+            float: right;
+        }
+
+        .user {
+            float: right;
+            width: 160px;
+            height: 50px;
+        }
+
+        .user img {
+            float: left;
+            width: 35px;
+            height: 35px;
+            margin-top: 8px;
+            border: 1px solid white;
+            border-radius: 100%;
+            display: block;
+        }
+
+        .user a {
+            display: block;
+            font-size: 16px;
+            text-align: center;
+            width: 70px;
+            height: 30px;
+            line-height: 30px;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: white;
+        }
+
+        .banner {
+            width: 100%;
+        }
+
+        .con-l,
+        .con-r {
+            float: left;
+        }
+
+        .con-l {
+            width: 20%;
+            border-right: 1px solid #ccc;
+        }
+
+        .con-l li {
+            width: 75%;
+            height: 35px;
+            line-height: 35px;
+            margin: 10px 0;
+            margin-left: 35px;
+            color: black;
+            font-size: 14px;
+        }
+
+        .con-l li a {
+            color: rgb(0, 0, 0);
+        }
+
+        .con-l span {
+            font-size: 12px;
+            padding-left: 25px;
+            color: black;
+            height: 35px;
+            line-height: 35px;
+        }
+        .con-r{
+            width: 79.9%;
+        }
+    #aa{
+        width: 100%;
+        height: 50px;
+    }
+    #aa li{
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 16px;
+        padding: 0 15px;
+    }
+    #aa li:nth-child(1){
+        margin-left: 10px;
+    }
+    #aa li a{
+        color: black;
+    }
+    .lun-bo{
+     position: relative;
+     width: 95%;
+     height: 250px;
+     margin: 0 auto;
+     margin-top: 10px;
+     overflow: hidden;
+    }
+    .left,
+    .right{
+        display: none;
+        position: absolute;
+        top: 45%;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 100%;
+        background-color: #ccc;
+        line-height: 30px;
+        text-align: center;
+        z-index: 3;
+    }
+    .left{
+        left: 0;
+    }
+    .right{
+        right: 0;
+    }
+    #ab{
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 500%;
+      height: 100%;
+    }
+    #ab li{
+     float: left;
+     width: 1055px;
+     height: 250px;
+    }
+    #ab li img{
+        width: 100%;
+        height: 100%;
+    }
+    ol{
+        position: absolute;
+        bottom: 20px;
+        left: 44%;
+        height: 20px;
+    }
+    ol li{
+        float: left;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #ccc;
+        border-radius: 100%;
+        margin: 0 5px;
+    }
+    .t-j{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .t-j p{
+        width: 100%;
+        height: 35px;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 35px;
+        padding-left: 25px;
+    }
+    .yyue{
+        width: 100%;
+        padding-left:25px;
+    }
+    .yyue ul{
+        width: 100%;
+    }
+    #y-d li{
+        float: left;
+        width: 185px;
+        height: 185px;
+        margin: 0 10px;
+        margin-top: 10px;
+    }
+    #y-d li img{
+        width: 100%;
+        height: 100%;
+    }
+    #y-d li span{
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    .current{
+        background-color: #ccc;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="con-hd">
+        <div class="hd-h">
+            <p>小洁的网页</p>
+            <a href=""><</a>
+                    <a href="">></a>
+                    <input type="text" value="洁的情绪">
+                    <button>查询</button>
+        </div>
+        <div class="hd-e">
+            <div class="user">
+                <img src="img/lun02.jpg" alt="">
+                <a href="">小洁</a>
+            </div>
+        </div>
+    </div>
+    <!-- 版心 -->
+    <div class="banner">
+        <div class="con-l">
+            <li><a href="">发现看点</a></li>
+            <li><a href="">发现看点</a></li>
+            <li><a href="">发现看点</a></li>
+            <li><a href="">发现看点</a></li>
+            <li><a href="">发现看点</a></li>
+            <li><a href="">发现看点</a></li>
+            <span>我的音乐</span>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的收藏</a></li>
+        </div>
+        <div class="con-r">
+    <ul id="aa">
+        <li><a href="">个性推荐</a></li>
+        <li><a href="">个性推荐</a></li>
+        <li><a href="">个性推荐</a></li>
+        <li><a href="">个性推荐</a></li>
+        <li><a href="">个性推荐</a></li>
+    </ul>
+    <div class="lun-bo">
+        <div class="left">《</div>
+        <div class="right">》</div>
+        <ul id="ab">
+            <li><img src="img/lun01.jpg" alt=""></li>
+            <li><img src="img/lun02.jpg" alt=""></li>
+            <li><img src="img/lun03.jpg" alt=""></li>
+        </ul>
+        <ol></ol>
+    </div>
+    <div class="t-j">
+        <p>推荐音乐--></p>
+        <div class="yyue">
+            <ul id="y-d">
+                <li index="0"><img src="img/jie01.jpg" alt=""><span>玫瑰少年</span></li>
+                <li index="1"><img src="img/jie02.jpg" alt=""><span>告白气球</span></li>
+                <li index="2"><img src="img/jie03.jpg" alt=""><span>坏女孩</span></li>
+                <li index="3"><img src="img/jie04.jpg" alt=""><span>合集的情</span></li>
+                <li index="4"><img src="img/jie05.jpg" alt=""><span>老男孩</span></li>
+            </ul>
+            <audio  src="E:\前端学习\javascript\苏冷末- - 玫瑰不一定要长成松柏，心之所 就是正确的方向.mp3"></audio>
+            <audio  src="振轩 - 告白气球.mp3"></audio>
+            <audio  src="苏冷末- - 坏女孩 翻唱合集.mp3"></audio>
+            <audio  src="苏冷末- - 见面是第一份礼物 花是第二份。.mp3"></audio>
+            <audio  src="苏冷末- - 老男孩 -王小草.mp3"></audio>
+        </div>
+    </div>
+        </div>
+    </div>``
+    <script>
+        // 经过改变背景颜色模块
+        var con1 = document.querySelector('.con-l');
+        var lis = con1.children;
+        for(let i = 0;i < lis.length;i++){
+            if(i == 6){
+                continue;
+            }else{
+                lis[i].addEventListener('mouseenter',function(){
+                    lis[i].style.backgroundColor = '#ccc';
+                })
+                lis[i].addEventListener('mouseleave',function(){
+                    lis[i].style.backgroundColor = '';
+                })
+            }}
+            // 轮播图模块
+            var lunbo = document.querySelector('.lun-bo')
+            var left = document.querySelector('.left')
+            var right = document.querySelector('.right')
+            // 显示与隐藏
+            lunbo.addEventListener('mouseenter',function(){
+            left.style.display = 'block';
+            right.style.display = 'block';
+            clearInterval(timer)
+            })
+            lunbo.addEventListener('mouseleave',function(){
+            left.style.display = 'none';
+            right.style.display = 'none';
+            setInterval(function () {
+                right.click();
+            }, 2000)
+            })
+            // 动态生成小li
+            var ol = document.querySelector('ol')
+            var ab = document.querySelector('#ab')
+            for(var i = 0;i<ab.children.length;i++){
+                var li = document.createElement('li');
+                li.setAttribute('index',i);
+                ol.appendChild(li);
+            }
+            ol.children[0].className = 'current'
+            // 点击小li，li的颜色就改变
+            var num = 0;
+            var ck = 0;
+                for(var i = 0; i < ol.children.length;i++){
+                    ol.children[i].addEventListener('click',function(){
+                    for(var i =0 ; i<ol.children.length;i++){
+                         ol.children[i].className = ''
+                    } 
+                    this.className = 'current'
+                    // 做动画
+                var index = this.getAttribute('index')
+                var target1 = -(index * 1055)
+                animate(ab,target1)
+                 })
+                }
+                // 点击左右按钮播放
+                var clone = ab.children[0].cloneNode(true);
+                ab.appendChild(clone);
+                var flag = true
+                right.addEventListener('click',function(){
+                    if (flag == true) {
+                flag = false
+                if (num == ab.children.length - 1) {
+                    ab.style.left = 0;
+                    num = 0;
+                }
+                num++;
+                var rights = -(1055 * num)
+                animate(ab, rights, function () {
+                    flag = true;
+                })
+            }
+            ck++;
+            if (ck == ol.children.length) {
+                ck = 0;
+            }
+            for (var i = 0; i < ol.children.length; i++) {
+                ol.children[i].className = '';
+            }
+            ol.children[ck].className = 'current';
+                })
+                left.addEventListener('click',function(){
+                    if (flag == true) {
+                flag = false
+                if (num == 0) {
+                    num = ab.children.length - 1;
+                    ab.style.left = -num * 590 + 'px';
+                }
+                num--;
+                var rights = -(1055 * num)
+                animate(ab, rights, function () {
+                    flag = true
+                })
+                ck--;
+                if (ck < 0) {
+                    ck = ol.children.length - 1;
+                }
+                for (var i = 0; i < ol.children.length; i++) {
+                    ol.children[i].className = '';
+                }
+                ol.children[ck].className = 'current';
+                }})
+                var timer = setInterval(function () {
+                right.click();
+            }, 2000)
+               var yd = document.querySelector('#y-d')
+               var jies = yd.children
+               var flag1 = true
+               let audios = document.querySelectorAll('audio');
+               console.log(audios);
+               console.log(jies.length);
+               for(var i=0;i < jies.length;i++){
+                console.log(i);
+                jies[i].addEventListener('click',fn)
+               }
+               function fn(){
+                 var index = this.getAttribute('index');
+                 if(flag1=true){
+                    flag1 = false
+                    function p(){
+                        audios[index].play();
+                    }
+                    p()
+                 }else{
+                    audios[index].pause();
+                 }
+               }
+    </script>
+</body>
+
+</html>
